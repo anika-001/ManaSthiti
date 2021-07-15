@@ -4,11 +4,39 @@
     </div>
     <div class="moodboard">
         <div class = "moods">
-            <div class = "mood" *ngFor = "let x of moods">
-                <div class = "moodbox"*ngFor = "let x of daysofmonths" >
+            <div class = "mood" *ngFor = "let x of usermoods">
+                <div class = "moodbox" *ngFor = "let ym of moods; let y = index" [ngClass] = "{
+                    'col0': x.payload.doc.data().mood == '0' && y == 0, 
+                    'col1': x.payload.doc.data().mood == '1' && y == 1, 
+                    'col2': x.payload.doc.data().mood == '2' && y == 2, 
+                    'col3': x.payload.doc.data().mood == '3' && y == 3, 
+                    'col4': x.payload.doc.data().mood == '4' && y == 4, 
+                    'col5': x.payload.doc.data().mood == '5' && y == 5 
+                }">
+
+                </div>
+            </div>
+            <div class = "mood" *ngFor = "let x of temp">
+                <div class = "moodbox" *ngFor = "let x of moods; let i = index">
 
                 </div>
             </div>
         </div>
+    </div>
+    <div class = "feeling">
+        <div class = "feelingcont">
+            <div class = "howfeeling">
+                How are you feeling today?
+            </div>
+            <div class = "colorpanel">
+                <div class = "coll col{{i}}" *ngFor = "let i of [0, 1, 2, 3, 4, 5]" (click) = "addmood(i)"></div>
+            </div>
+        </div>
+    </div>
+    <div class = "story">
+
+    </div>
+    <div class = "stickypallete">
+        <div class = "rect col{{i}}" *ngFor = "let i of [0, 1, 2, 3, 4, 5]">{{moods[i]}}</div> 
     </div>
 </div>

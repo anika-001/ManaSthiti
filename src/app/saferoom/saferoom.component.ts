@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { saferoom } from '../JsonData/saferoom';
-import { AngularTiltModule } from 'angular-tilt';
+// import { AngularTiltModule } from 'angular-tilt';
 
 @Component({
   selector: 'app-saferoom',
