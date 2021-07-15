@@ -30,6 +30,8 @@ import { MallComponent } from './mall/mall.component';
 import { ActivitiesComponent } from './activities/activities.component';
 import { ScoreboardComponent } from './scoreboard/scoreboard.component';
 import { FilldbComponent } from './filldb/filldb.component';
+import { ComicroomComponent } from './comicroom/comicroom.component';
+import { AddimagesfsComponent } from './addimagesfs/addimagesfs.component';
 
 @NgModule({
   declarations: [
@@ -47,11 +49,13 @@ import { FilldbComponent } from './filldb/filldb.component';
     CardsComponent,
     ActivitiesComponent,
     ScoreboardComponent,
+    ComicroomComponent,
     BeachComponent,
     ForestComponent,
     MallComponent,
     ActivitiesComponent,
-    FilldbComponent
+    FilldbComponent,
+    AddimagesfsComponent
   ],
   imports: [
     BrowserModule,

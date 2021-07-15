@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AngularFirestore } from '@angular/fire/firestore';
 import { FormControl, FormGroup } from '@angular/forms';
 
 @Component({
@@ -8,7 +9,7 @@ import { FormControl, FormGroup } from '@angular/forms';
 })
 export class FilldbComponent implements OnInit {
 
-  constructor() { }
+  constructor(private db: AngularFirestore) { }
 
   ngOnInit(): void {
   }
@@ -18,5 +19,9 @@ export class FilldbComponent implements OnInit {
     Message: new FormControl(''),
     Number: new FormControl(''),
   })
+  
+  add(){
+    this.db.collection("Comicdata").add(this.form.value);
+  }
 
 }

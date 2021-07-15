@@ -13,7 +13,8 @@ import { ForestComponent } from './forest/forest.component';
 import { MallComponent } from './mall/mall.component';
 import { ForumComponent } from './forum/forum.component';
 import { ActivitiesComponent } from './activities/activities.component';
-
+import { ComicroomComponent } from './comicroom/comicroom.component';
+import { AddimagesfsComponent } from './addimagesfs/addimagesfs.component';
 const routes: Routes = [
   {
     path: 'signin',
@@ -73,6 +74,14 @@ const routes: Routes = [
   {
     path: 'activities',
     component: ActivitiesComponent
+  },
+  {
+    path: 'comicroom',
+    component: ComicroomComponent
+  },
+  {
+    path: 'addimages',
+    component: AddimagesfsComponent
   }
 ];
 
