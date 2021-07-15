@@ -8,6 +8,9 @@ import { Game2createroomComponent } from './game2createroom/game2createroom.comp
 import { ComicComponent } from './comic/comic.component';
 import { Game2Component } from './game2/game2.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { BeachComponent } from './beach/beach.component';
+import { ForestComponent } from './forest/forest.component';
+import { MallComponent } from './mall/mall.component';
 
 const routes: Routes = [
   {
@@ -48,6 +51,18 @@ const routes: Routes = [
   {
     path: 'dashboard',
     component: DashboardComponent
+  },
+  {
+    path: 'beach',
+    component: BeachComponent
+  },
+  {
+    path: 'forest',
+    component: ForestComponent
+  },
+  {
+    path: 'mall',
+    component: MallComponent
   }
 ];
 

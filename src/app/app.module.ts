@@ -22,8 +22,11 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { Game2Component } from './game2/game2.component';
 import { Game2createroomComponent } from './game2createroom/game2createroom.component';
 import { ComicComponent } from './comic/comic.component';
+import { ForumComponent } from './forum/forum.component';
 import { CardsComponent } from './cards/cards.component';
-import { AngularTiltModule } from 'angular-tilt';
+import { BeachComponent } from './beach/beach.component';
+import { ForestComponent } from './forest/forest.component';
+import { MallComponent } from './mall/mall.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +40,11 @@ import { AngularTiltModule } from 'angular-tilt';
     Game2Component,
     Game2createroomComponent,
     ComicComponent,
-    CardsComponent
+    ForumComponent,
+    CardsComponent,
+    BeachComponent,
+    ForestComponent,
+    MallComponent
   ],
   imports: [
     BrowserModule,
@@ -51,7 +58,7 @@ import { AngularTiltModule } from 'angular-tilt';
     MatSelectModule,
     MatGridListModule,
     BrowserAnimationsModule,
-    AngularTiltModule
+  
   ],
   providers: [],
   bootstrap: [AppComponent]
