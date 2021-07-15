@@ -9,18 +9,20 @@ import { AngularFirestore } from '@angular/fire/firestore';
   styleUrls: ['./comic.component.scss']
 })
 export class ComicComponent implements OnInit {
-Image:any;
-Message:any;
-constructor(private db: AngularFirestore) { }
+  Image: any;
+  Message: any;
+  Comics:any;
+  constructor(private db: AngularFirestore) { }
 
   ngOnInit(): void {
     AOS.init();
+    this.myfirebasefunc();
+  }
+  myfirebasefunc() {
     this.db.collection("Comicdata").snapshotChanges().subscribe((res: any) => {
-      this.Image = res.payload.data().Image;
-      this.Message = res.payload.data().Message;
-      console.log(res);
-      console.log("hello");
+
+      this.Comics = res;
+      
     })
   }
-
 }

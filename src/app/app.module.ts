@@ -24,8 +24,12 @@ import { Game2createroomComponent } from './game2createroom/game2createroom.comp
 import { ComicComponent } from './comic/comic.component';
 import { ForumComponent } from './forum/forum.component';
 import { CardsComponent } from './cards/cards.component';
+import { BeachComponent } from './beach/beach.component';
+import { ForestComponent } from './forest/forest.component';
+import { MallComponent } from './mall/mall.component';
 import { ActivitiesComponent } from './activities/activities.component';
 import { ScoreboardComponent } from './scoreboard/scoreboard.component';
+import { FilldbComponent } from './filldb/filldb.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +46,12 @@ import { ScoreboardComponent } from './scoreboard/scoreboard.component';
     ForumComponent,
     CardsComponent,
     ActivitiesComponent,
-    ScoreboardComponent
+    ScoreboardComponent,
+    BeachComponent,
+    ForestComponent,
+    MallComponent,
+    ActivitiesComponent,
+    FilldbComponent
   ],
   imports: [
     BrowserModule,
@@ -56,6 +65,7 @@ import { ScoreboardComponent } from './scoreboard/scoreboard.component';
     MatSelectModule,
     MatGridListModule,
     BrowserAnimationsModule,
+  
   ],
   providers: [],
   bootstrap: [AppComponent]
