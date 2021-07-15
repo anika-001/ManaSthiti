@@ -51,7 +51,7 @@ import { AngularTiltModule } from 'angular-tilt';
     MatSelectModule,
     MatGridListModule,
     BrowserAnimationsModule,
-    AngularTiltModule,
+    AngularTiltModule
   ],
   providers: [],
   bootstrap: [AppComponent]
