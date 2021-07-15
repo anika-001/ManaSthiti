@@ -56,7 +56,7 @@ export class DashboardComponent implements OnInit {
   getMoods() {
     this.db.collection("Users").doc(this.user.uid).collection("Moods").snapshotChanges().subscribe(res => {
       this.usermoods = res;
-      console.log(this.usermoods[0].payload.doc.data())
+      // console.log(this.usermoods[0].payload.doc.data())
       this.temp = []
       for(let i = 0; i < (15 - res.length); i++) this.temp.push(i);
     });
@@ -64,17 +64,17 @@ export class DashboardComponent implements OnInit {
 
   addstory() {
     var date = new Date()
-    this.db.collection("Users").doc(this.user.uid).collection("Stories").doc(date.getDay().toString() + " " + date.getDate().toString() + " " + date.getMonth().toString() + " " + date.getFullYear().toString()).collection("Story").add({ "story": "story", "Time": "Time" });
+    this.db.collection("Users").doc(this.user.uid).collection("Stories").doc(date.getFullYear().toString() + " " + date.getMonth().toString() + " " +  date.getDate().toString() + " " + date.getDay().toString()).collection("Story").add({ "story": "story", "Time": "Time" });
   }
 
   addtostory() {
     var date = new Date()
-    this.db.collection("Users").doc(this.user.uid).collection("Stories").doc(date.getDay().toString() + " " + date.getDate().toString() + " " + date.getMonth().toString() + " " + date.getFullYear().toString()).collection("Story").add({ "story": "story", "Time": "Time" });
+    this.db.collection("Users").doc(this.user.uid).collection("Stories").doc(date.getFullYear().toString() + " " + date.getMonth().toString() + " " +  date.getDate().toString() + " " + date.getDay().toString()).collection("Story").add({ "story": "story", "Time": "Time" });
   }
 
   addmood(mood) {
     var date = new Date()
-    this.db.collection("Users").doc(this.user.uid).collection("Moods").doc(date.getDay().toString() + " " + date.getDate().toString() + " " + date.getMonth().toString() + " " + date.getFullYear().toString()).set({ "mood": mood });
+    this.db.collection("Users").doc(this.user.uid).collection("Moods").doc(date.getFullYear().toString() + " " + date.getMonth().toString() + " " +  date.getDate().toString() + " " + date.getDay().toString()).set({ "mood": mood });
   }
 
 }
