@@ -7,6 +7,7 @@ import { Game1Component } from './game1/game1.component';
 import { Game2createroomComponent } from './game2createroom/game2createroom.component';
 import { ComicComponent } from './comic/comic.component';
 import { Game2Component } from './game2/game2.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 const routes: Routes = [
   {
@@ -43,6 +44,10 @@ const routes: Routes = [
   {
     path: 'jeopardy',
     component: Game2Component
+  },
+  {
+    path: 'dashboard',
+    component: DashboardComponent
   }
 ];
 
