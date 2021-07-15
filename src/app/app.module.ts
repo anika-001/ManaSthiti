@@ -21,6 +21,7 @@ import { Game1Component } from './game1/game1.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { Game2Component } from './game2/game2.component';
 import { Game2createroomComponent } from './game2createroom/game2createroom.component';
+import { ComicComponent } from './comic/comic.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { Game2createroomComponent } from './game2createroom/game2createroom.comp
     DashboardComponent,
     NavbarComponent,
     Game2Component,
-    Game2createroomComponent
+    Game2createroomComponent,
+    ComicComponent
   ],
   imports: [
     BrowserModule,

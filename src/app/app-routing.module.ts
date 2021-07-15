@@ -5,6 +5,7 @@ import { SigninComponent } from './signin/signin.component';
 import { SaferoomComponent } from './saferoom/saferoom.component';
 import { Game1Component } from './game1/game1.component';
 import { Game2createroomComponent } from './game2createroom/game2createroom.component';
+import { ComicComponent } from './comic/comic.component';
 
 const routes: Routes = [
   {
@@ -33,6 +34,10 @@ const routes: Routes = [
   {
     path: 'createroom',
     component: Game2createroomComponent
+  },
+  {
+    path:'comic',
+    component:ComicComponent
   }
 ];
 

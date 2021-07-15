@@ -1,4 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnDestroy, OnInit } from '@angular/core';
+// import { Howl, Howler } from 'Howler';
+import { AngularFirestore } from '@angular/fire/firestore';
+import { Router } from '@angular/router';
+import firebase from 'firebase/app'
+import * as $ from 'jquery';
 
 @Component({
   selector: 'app-game2',
