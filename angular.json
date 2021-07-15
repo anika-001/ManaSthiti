@@ -31,9 +31,7 @@
               "src/styles.scss",
               "../manasthiti/node_modules/aos/dist/aos.css"
             ],
-            "scripts": [
-              "../manastathi/node_modules/aos/dist/aos.js"
-            ]
+            "scripts": []
           },
           "configurations": {
             "production": {
