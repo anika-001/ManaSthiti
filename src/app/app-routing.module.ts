@@ -9,6 +9,7 @@ import { ComicComponent } from './comic/comic.component';
 import { Game2Component } from './game2/game2.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ForumComponent } from './forum/forum.component';
+import { ActivitiesComponent } from './activities/activities.component';
 
 const routes: Routes = [
   {
@@ -53,6 +54,10 @@ const routes: Routes = [
   {
     path: 'forum',
     component: ForumComponent
+  },
+  {
+    path: 'activities',
+    component: ActivitiesComponent
   }
 ];
 

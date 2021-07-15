@@ -24,6 +24,7 @@ import { Game2createroomComponent } from './game2createroom/game2createroom.comp
 import { ComicComponent } from './comic/comic.component';
 import { ForumComponent } from './forum/forum.component';
 import { CardsComponent } from './cards/cards.component';
+import { ActivitiesComponent } from './activities/activities.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { CardsComponent } from './cards/cards.component';
     Game2createroomComponent,
     ComicComponent,
     ForumComponent,
-    CardsComponent
+    CardsComponent,
+    ActivitiesComponent
   ],
   imports: [
     BrowserModule,

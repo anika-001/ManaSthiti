@@ -19,7 +19,6 @@ export class ForumComponent implements OnInit {
   user: any;
   ngOnInit(): void {
     this.getthreads();
-    this.getdefaultthread();
     this.as.getUserState().subscribe(user => {
       if(user == null) {this.user = null}
       else{
@@ -36,15 +35,6 @@ export class ForumComponent implements OnInit {
   threadform = new FormGroup({newth: new FormControl()})
   replyform = new FormGroup({replyin: new FormControl()})
 
-  getdefaultthread()
-  {
-    this.db.collection("Threads", ref => ref.where("topic", '==', 'Suggestions')).snapshotChanges().subscribe(res=>{
-      this.thread = res[0];
-      this.db.collection("Threads").doc(this.thread.payload.doc.id).collection("comments").snapshotChanges().subscribe(res => {
-        this.comments = res;
-      })
-    })
-  }
   getthreads(){
     this.db.collection("Threads").snapshotChanges().subscribe(res => {
       this.allthreads = res;
