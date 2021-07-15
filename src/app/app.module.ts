@@ -22,6 +22,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { Game2Component } from './game2/game2.component';
 import { Game2createroomComponent } from './game2createroom/game2createroom.component';
 import { ComicComponent } from './comic/comic.component';
+import { ForumComponent } from './forum/forum.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { ComicComponent } from './comic/comic.component';
     NavbarComponent,
     Game2Component,
     Game2createroomComponent,
-    ComicComponent
+    ComicComponent,
+    ForumComponent
   ],
   imports: [
     BrowserModule,
