@@ -19,6 +19,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { SaferoomComponent } from './saferoom/saferoom.component';
 import { Game1Component } from './game1/game1.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { Game2Component } from './game2/game2.component';
+import { Game2createroomComponent } from './game2createroom/game2createroom.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { NavbarComponent } from './navbar/navbar.component';
     SigninComponent,
     HomeComponent,
     DashboardComponent,
-    NavbarComponent
+    NavbarComponent,
+    Game2Component,
+    Game2createroomComponent
   ],
   imports: [
     BrowserModule,

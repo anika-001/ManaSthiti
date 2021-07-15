@@ -4,6 +4,7 @@ import { HomeComponent } from './home/home.component';
 import { SigninComponent } from './signin/signin.component';
 import { SaferoomComponent } from './saferoom/saferoom.component';
 import { Game1Component } from './game1/game1.component';
+import { Game2createroomComponent } from './game2createroom/game2createroom.component';
 
 const routes: Routes = [
   {
@@ -29,6 +30,10 @@ const routes: Routes = [
     path: 'game1',
     component: Game1Component
   },
+  {
+    path: 'createroom',
+    component: Game2createroomComponent
+  }
 ];
 
 @NgModule({
