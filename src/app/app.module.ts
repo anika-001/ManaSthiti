@@ -29,6 +29,7 @@ import { ForestComponent } from './forest/forest.component';
 import { MallComponent } from './mall/mall.component';
 import { ActivitiesComponent } from './activities/activities.component';
 import { ComicroomComponent } from './comicroom/comicroom.component';
+import { AddimagesfsComponent } from './addimagesfs/addimagesfs.component';
 
 @NgModule({
   declarations: [
@@ -49,7 +50,8 @@ import { ComicroomComponent } from './comicroom/comicroom.component';
     BeachComponent,
     ForestComponent,
     MallComponent,
-    ActivitiesComponent
+    ActivitiesComponent,
+    AddimagesfsComponent
   ],
   imports: [
     BrowserModule,
