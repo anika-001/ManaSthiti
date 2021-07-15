@@ -1,9 +1,9 @@
 <div class ="main">
-    <div class ="header"></div>
+    <!-- <div class ="header"></div> -->
         <div class ="start">
 
             <div class = "boxes">
-                <div class ="box" *ngFor="let x of activities" data-tilt data-tilt-scale="0.95" data-tilt-startY="40" routerLink={{x.link}}>{{x.name}}</div>
+                <div class ="box" *ngFor="let x of activities" routerLink={{x.link}}>{{x.name}}</div>
             </div>
 
         </div>

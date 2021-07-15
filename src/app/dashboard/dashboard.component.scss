@@ -1,4 +1,4 @@
-.main{
+.main {
     height: 100vh;
     max-width: 100vw;
     background: linear-gradient(to bottom, #00c6df, #ffffff 10%);
@@ -6,7 +6,7 @@
     // overflow-x: hidden;
 }
 
-.title{
+.title {
     // background-color: var(--col4);
     height: 20vh;
     width: 100%;
@@ -15,37 +15,37 @@
     padding: 5%;
 }
 
-.moodboard{
-
+.moodboard {
     // background-color: rgb(252, 252, 252);
     height: 47vh;
     width: 100%;
     display: flex;
+    border-top: solid thin silver;
 }
 
-
-.moods{
+.moods {
     width: 100%;
     height: 100%;
     display: flex;
-    
 }
 
-.mood{
+.mood {
     height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
 }
 
-.moodbox{
+.moodbox {
     width: 100%;
     height: 100%;
-    border: solid 1px silver;
+    border-bottom: solid 1px silver;
+    border-right: solid 1px silver;
     text-align: center;
+    cursor: pointer;
 }
 
-.md{
+.md {
     border: none;
 }
 
@@ -56,7 +56,7 @@
 //     text-align: center;
 // }
 
-.feeling{
+.feeling {
     width: 100%;
     height: 20vh;
     // background-color: aqua;
@@ -64,14 +64,14 @@
     align-items: center;
 }
 
-.feelingcont{
+.feelingcont {
     width: 100%;
     height: 10vh;
     // background-color: white;
     display: flex;
 }
 
-.howfeeling{
+.howfeeling {
     width: 70%;
     display: flex;
     flex-direction: column;
@@ -82,7 +82,7 @@
     font-size: 250%;
 }
 
-.colorpanel{
+.colorpanel {
     width: 30%;
     display: flex;
     justify-content: space-evenly;
@@ -90,42 +90,66 @@
     text-align: center;
 }
 
-.coll{
+.coll {
     height: 5vh;
     width: 5vh;
     border-radius: 50%;
     cursor: pointer;
 }
 
-.coll:hover{
+.coll:hover {
     opacity: 0.5;
     border: solid thin black;
 }
-.col0{
+.col0 {
     background-color: rgb(255, 0, 0);
 }
 
-.col1{
+.col1 {
     background-color: rgb(255, 165, 0);
 }
 
-.col2{
+.col2 {
     background-color: rgb(255, 255, 0);
 }
 
-.col3{
-    background-color: 	rgb(0, 128, 0);
+.col3 {
+    background-color: rgb(0, 128, 0);
 }
 
-.col4{
+.col4 {
     background-color: rgb(0, 0, 255);
 }
 
-.col5{
-    background-color: 	rgb(75, 0, 130);
+.col5 {
+    background-color: rgb(75, 0, 130);
 }
 
-.stickypallete{
+.rcol0 {
+    background-color: rgb(255, 127, 127);
+}
+
+.rcol1 {
+    background-color: rgb(255, 167, 127);
+}
+
+.rcol2 {
+    background-color: rgb(255, 255, 127);
+}
+
+.rcol3 {
+    background-color: rgb(63, 128, 63);
+}
+
+.rcol4 {
+    background-color: rgb(127, 127, 255);
+}
+
+.rcol5 {
+    background-color: rgb(138, 63, 130);
+}
+
+.stickypallete {
     position: sticky;
     bottom: 0;
     width: 100%;
@@ -134,15 +158,25 @@
     display: flex;
 }
 
-.rect{
+.rect {
     padding: 1%;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
     font-size: 120%;
     text-align: center;
     color: black;
+    position: relative;
 }
 
-.story{
+// .rect::before{
+//     content: "";
+//     position: absolute;
+//     background-color: rgba(255, 255, 255, 0.5);
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 100%;
+// }
+.story {
     // background-color: darkcyan;
     height: 100vh;
     width: 100%;
@@ -150,7 +184,7 @@
     display: flex;
 }
 
-.enterstory{
+.enterstory {
     width: 30vw;
     height: 80vh;
     // background-color: blue;
@@ -163,47 +197,50 @@
     font-size: 200%;
 }
 
-.stories{
+.stories {
     width: 70vw;
     display: flex;
     flex-direction: column;
     align-items: center;
-    
-
 }
 
-.ip{
+.ip {
     width: 25vw;
     height: 60vh;
     font-size: 70%;
     font-family: handwriting;
 }
 
-.date{
+.date {
     font-size: 150%;
     font-family: handwriting;
     font-weight: bold;
-    
 }
-.storyouter{
- width: 60vw;
- padding: 2%;
- background-color: rgb(250, 250, 250);
- font-family: handwriting;
- margin: 2% 0%;
+.storyouter {
+    width: 60vw;
+    padding: 2%;
+    background-color: rgb(250, 250, 250);
+    font-family: handwriting;
+    margin: 2% 0%;
+
+    background: rgba(248, 231, 28, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
-.storyinner{
+.storyinner {
     padding: 2%;
     border-top: solid thin silver;
-    
 }
 
-.storytime{
+.storytime {
     font-family: handwriting;
 }
 
-.storystory{
+.storystory {
     font-family: handwriting;
     margin-left: 5%;
 }

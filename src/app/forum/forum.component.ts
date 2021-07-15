@@ -38,7 +38,6 @@ export class ForumComponent implements OnInit {
   getthreads(){
     this.db.collection("Threads").snapshotChanges().subscribe(res => {
       this.allthreads = res;
-      console.log(this.allthreads[0].payload.doc.data())
     })
   }
 
@@ -51,7 +50,9 @@ export class ForumComponent implements OnInit {
       this.router.navigate(['/login']);
     }
     else{
-      this.db.collection("Threads").add({"madeby": this.user.name, "uid": this.user.uid, "topic": this.threadform.get("newth").value});
+      this.db.collection("Threads").add({"madeby": this.user.name, "uid": this.user.uid, "topic": this.threadform.get("newth").value}).then(res => {
+        this.threadform.get("newth").setValue("");
+      });
     }
   }
 
@@ -60,7 +61,9 @@ export class ForumComponent implements OnInit {
       this.router.navigate(['/login']);
     }
     else{
-      this.db.collection("Threads").add({"madeby": "Anonymous", "uid": this.user.uid, "topic": this.threadform.get("newth").value});
+      this.db.collection("Threads").add({"madeby": "Anonymous", "uid": this.user.uid, "topic": this.threadform.get("newth").value}).then(res => {
+        this.threadform.get("newth").setValue("");
+      });
     }
   }
 
@@ -74,7 +77,9 @@ export class ForumComponent implements OnInit {
       this.router.navigate(['/login']);
     }
     else{
-      this.db.collection("Threads").doc(this.thread.payload.doc.id).collection("comments").add({"uid": this.user.uid, "comment": this.replyform.get("replyin").value, "name": this.user.name})
+      this.db.collection("Threads").doc(this.thread.payload.doc.id).collection("comments").add({"uid": this.user.uid, "comment": this.replyform.get("replyin").value, "name": this.user.name}).then(res => {
+        this.replyform.get("replyin").setValue("");
+      });
     }
   }
 
@@ -83,7 +88,9 @@ export class ForumComponent implements OnInit {
       this.router.navigate(['/login']);
     }
     else{
-      this.db.collection("Threads").doc(this.thread.payload.doc.id).collection("comments").add({"uid": this.user.uid, "comment": this.replyform.get("replyin").value, "name": "Anonymous"})
+      this.db.collection("Threads").doc(this.thread.payload.doc.id).collection("comments").add({"uid": this.user.uid, "comment": this.replyform.get("replyin").value, "name": "Anonymous"}).then(res => {
+        this.replyform.get("replyin").setValue("");
+      });
     }
   }
 

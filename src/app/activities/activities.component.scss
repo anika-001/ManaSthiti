@@ -43,6 +43,7 @@
     width: 20vw;
     // background-color:rgba(223, 224, 255, 0.578);
     display:flex;
+    position: relative;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-evenly;
@@ -51,10 +52,18 @@
     border: 1px solid transparentize(white, 0.5);
     text-shadow: 0 0 1em transparentize(black, 0.5);
     font-size: 150%;
+    font-family: country;
+    font-weight: bold;
     background: transparentize(white, 0.8);
     backdrop-filter: blur(20px);
-    transform: perspective(500px);
-    transform-style: preserve-3d;
+    cursor: pointer;
+    // transform: perspective(500px);
+    // transform-style: preserve-3d;
 }
+
+.box:hover{
+    background: white;
+}
+
 
   

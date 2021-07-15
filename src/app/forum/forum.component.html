@@ -1,23 +1,11 @@
 <div class = "main">
-    <div class = "header">
-        <div class="starttop">
-            <div class="lstartcontent">
-                <p>Forum</p>
-            </div>
-            <div class="startpic">
-                <!-- <img src="../../assets/images/forum.png" height= "200"> -->
-            </div>
-        </div>
-        <div class="search">
-            <input type="text" placeholder="SEARCH FORUM">
-        </div>
-    </div>
+    <div class = "header"></div>
     <div class = "maincontent">
         <div class = "filter">
             <div class = "yourcomment">
                 <form [formGroup]="threadform" style="width: 100%;"><input class = "ip" placeholder="Add a Thread" type="text" style="width: 100%;" formControlName="newth"></form>
-                <div style="align-self: flex-end; margin-right: 10%; font-size: 100%; display:flex;"><button class = "custbutton" style = "padding: 0% 50%;"(click) = "addthread()">+</button>
-                    <button class = "custbutton" style = "padding: 0% 50%;"(click) = "addthreadAnon()">+ Anonymously</button></div>
+                <div style="align-self: flex-start; margin-right: 10%; font-size: 50%; display:flex; width: 20vw; margin-left: 5px;"><button class = "custbutton" style = "padding: 0% 0%;"(click) = "addthread()">Add</button>
+                    <button class = "custbutton" style = "margin-left: 10px;"(click) = "addthreadAnon()">Add Anonymously</button></div>
             </div>
             <div style="font-size: 130%; text-align: center; width: 100%;">Threads: </div>
             <div *ngFor = "let x of allthreads" (click) = "showthread(x)" style = "margin: 5% 2%; cursor: pointer; text-decoration: underline;">
@@ -32,8 +20,8 @@
             </div>
             <div class = "yourcomment">
                 <form [formGroup]="replyform" style="width: 100%;"><input class = "ip" placeholder="reply" type="text" style="width: 80%;" formControlName="replyin"></form>
-                <div style="align-self: flex-end; margin-right: 10%; display:flex;"><button class = "custbutton" (click) = "reply()">Reply</button>
-                    <button class = "custbutton" (click) = "replyAnon()">Reply Anonymously</button></div>
+                <div style="align-self: flex-end; margin-right: 10%; display:flex; font-size: 70%;"><button class = "custbutton" (click) = "reply()">Reply</button>
+                    <button class = "custbutton" style = "margin-left: 10px;" (click) = "replyAnon()">Reply Anonymously</button></div>
             </div>
             <div class = "comments">
                 <div class = "comment" *ngFor = "let x of comments">
@@ -45,6 +33,9 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class = "thread" *ngIf = "thread == ''">
+           <div style="font-size: 400%; text-align: center; font-family: country;">Please select a thread or a new one</div>
         </div>
     </div>
 </div>
