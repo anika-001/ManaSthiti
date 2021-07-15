@@ -41,8 +41,6 @@ import { ComicComponent } from './comic/comic.component';
     AngularFirestoreModule,
     MatSelectModule,
     BrowserAnimationsModule,
-    SaferoomComponent,
-    Game1Component
   ],
   providers: [],
   bootstrap: [AppComponent]
