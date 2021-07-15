@@ -1,13 +1,19 @@
-<div style="height: 100vh; width:100vw">
+<div style="height: 100vh; width:100vw;">
+    <div style="height:10vh; background-color: var(--col4);">
+
+    </div>
     <div class="bt-container">
         <div *ngIf="page1">
             <div *ngFor="let i of locations1; let ind=index" >
                 <button class="btn" [style.margin-left.%]="i.x"
                     [style.margin-top.%]="i.y" id="btn{{ind}}" (click)="click(ind)"></button>
                 <div class="rect-container" [style.margin-left.%]="i.x"
-                    [style.margin-top.%]="i.y" id="rect{{ind}}"></div>
+                    [style.margin-top.%]="i.y" id="rect{{ind}}">{{prob[ind]}}</div>
             </div>
-            <button *ngIf="showcont" (click)="toggle()">
+            <div>
+                Anatomy of a Panic Attack
+            </div>
+            <button class="cont" *ngIf="showcont" (click)="toggle()">
                 Continue
             </button>
         </div>
@@ -16,7 +22,10 @@
                 <button class="btn" [style.margin-left.%]="i.x"
                     [style.margin-top.%]="i.y" id="btn{{ind}}" (click)="click(ind)"></button>
                 <div class="rect-container" [style.margin-left.%]="i.x"
-                    [style.margin-top.%]="i.y" id="rect{{ind}}"></div>
+                    [style.margin-top.%]="i.y" id="rect{{ind}}">{{soln[ind]}}</div>
+            </div>
+            <div>
+                How to Get Through It
             </div>
         </div>
 
