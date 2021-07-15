@@ -24,6 +24,9 @@ import { Game2createroomComponent } from './game2createroom/game2createroom.comp
 import { ComicComponent } from './comic/comic.component';
 import { ForumComponent } from './forum/forum.component';
 import { CardsComponent } from './cards/cards.component';
+import { BeachComponent } from './beach/beach.component';
+import { ForestComponent } from './forest/forest.component';
+import { MallComponent } from './mall/mall.component';
 import { ActivitiesComponent } from './activities/activities.component';
 import { ComicroomComponent } from './comicroom/comicroom.component';
 
@@ -42,7 +45,11 @@ import { ComicroomComponent } from './comicroom/comicroom.component';
     ForumComponent,
     CardsComponent,
     ActivitiesComponent,
-    ComicroomComponent
+    ComicroomComponent,
+    BeachComponent,
+    ForestComponent,
+    MallComponent,
+    ActivitiesComponent
   ],
   imports: [
     BrowserModule,
@@ -56,6 +63,7 @@ import { ComicroomComponent } from './comicroom/comicroom.component';
     MatSelectModule,
     MatGridListModule,
     BrowserAnimationsModule,
+  
   ],
   providers: [],
   bootstrap: [AppComponent]
