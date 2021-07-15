@@ -32,6 +32,7 @@ import { ScoreboardComponent } from './scoreboard/scoreboard.component';
 import { FilldbComponent } from './filldb/filldb.component';
 import { ComicroomComponent } from './comicroom/comicroom.component';
 import { AddimagesfsComponent } from './addimagesfs/addimagesfs.component';
+import { HouseComponent } from './house/house.component';
 
 @NgModule({
   declarations: [
@@ -55,7 +56,8 @@ import { AddimagesfsComponent } from './addimagesfs/addimagesfs.component';
     MallComponent,
     ActivitiesComponent,
     FilldbComponent,
-    AddimagesfsComponent
+    AddimagesfsComponent,
+    HouseComponent
   ],
   imports: [
     BrowserModule,
