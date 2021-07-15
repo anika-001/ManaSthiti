@@ -2,10 +2,10 @@
 .bt-container{
   display:inline-block;
   position:relative;
-  background-image: url("../../assets/images/anatomy.jpg");
+  background-image: url("../../assets/images/anatomy.png");
   height: 80vh;
   width: 30vw;
-  background-size: 100%;
+  background-size: 100% 100%;
   }
 
 .bt-container img {
@@ -45,8 +45,8 @@
 }
 
 .cont {
-  margin-top: 90%;
-  margin-left: 90%;
+  margin-top: 95%;
+  margin-left: 95%;
   background-color: #0492c2;
   border: none;
   color: white;
@@ -54,6 +54,6 @@
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 150%;
   border-radius: 12px;
 }
