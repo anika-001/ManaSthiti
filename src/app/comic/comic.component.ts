@@ -20,9 +20,9 @@ export class ComicComponent implements OnInit {
   }
   myfirebasefunc() {
     this.db.collection("Comicdata").snapshotChanges().subscribe((res: any) => {
-
-      this.Comics = res;
-      
+    this.Comics = res;
+    res.sort(function(a,b){return a.payload.doc.data().Number-b.payload.doc.data().Number});  
     })
   }
+  
 }
