@@ -28,9 +28,12 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "../manasthiti/node_modules/aos/dist/aos.css"
             ],
-            "scripts": []
+            "scripts": [
+              "../manastathi/node_modules/aos/dist/aos.js"
+            ]
           },
           "configurations": {
             "production": {
