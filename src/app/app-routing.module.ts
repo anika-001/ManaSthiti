@@ -10,6 +10,7 @@ import { Game2Component } from './game2/game2.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ForumComponent } from './forum/forum.component';
 import { ActivitiesComponent } from './activities/activities.component';
+import { ComicroomComponent } from './comicroom/comicroom.component';
 
 const routes: Routes = [
   {
@@ -58,6 +59,10 @@ const routes: Routes = [
   {
     path: 'activities',
     component: ActivitiesComponent
+  },
+  {
+    path: 'comicroom',
+    component: ComicroomComponent
   }
 ];
 

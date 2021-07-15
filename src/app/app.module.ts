@@ -25,6 +25,7 @@ import { ComicComponent } from './comic/comic.component';
 import { ForumComponent } from './forum/forum.component';
 import { CardsComponent } from './cards/cards.component';
 import { ActivitiesComponent } from './activities/activities.component';
+import { ComicroomComponent } from './comicroom/comicroom.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { ActivitiesComponent } from './activities/activities.component';
     ComicComponent,
     ForumComponent,
     CardsComponent,
-    ActivitiesComponent
+    ActivitiesComponent,
+    ComicroomComponent
   ],
   imports: [
     BrowserModule,
