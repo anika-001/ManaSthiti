@@ -15,11 +15,11 @@ constructor(private db: AngularFirestore) { }
 
   ngOnInit(): void {
     AOS.init();
-    this.db.collection("Comicdata").doc().snapshotChanges().subscribe((res: any) => {
+    this.db.collection("Comicdata").snapshotChanges().subscribe((res: any) => {
       this.Image = res.payload.data().Image;
       this.Message = res.payload.data().Message;
       console.log(res);
-      console.log("hello")
+      console.log("hello");
     })
   }
 
