@@ -6,19 +6,16 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    //height:10vh; width: 100%;
 }
 .header{
-    height:15vh;
+    height:20vh;
     width:100%;
-    
-    background: linear-gradient(to bottom, #00c6df, #ffffff 100%);
 }
 
 .start{
     height:100vh;
     width:100%;
-    background-image: url("./../../assets/images/activities2.jpg");
+    background-image: url("./../../assets/images/saferoombg.jpg");
     display:flex;
     flex-direction: column;
     justify-content: center;
@@ -43,7 +40,6 @@
     width: 20vw;
     // background-color:rgba(223, 224, 255, 0.578);
     display:flex;
-    position: relative;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-evenly;
@@ -51,19 +47,10 @@
     border-radius: 10%;
     border: 1px solid transparentize(white, 0.5);
     text-shadow: 0 0 1em transparentize(black, 0.5);
-    font-size: 150%;
-    font-family: country;
-    font-weight: bold;
     background: transparentize(white, 0.8);
     backdrop-filter: blur(20px);
-    cursor: pointer;
-    // transform: perspective(500px);
-    // transform-style: preserve-3d;
+    transform: perspective(500px);
+    transform-style: preserve-3d;
 }
-
-.box:hover{
-    background: white;
-}
-
 
   

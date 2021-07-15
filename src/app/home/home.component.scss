@@ -129,11 +129,12 @@
 .infowhatwedo{
     padding: 2% 0;
     margin-left: 70%;
-    // background-color: aqua;
+    background-color: rgba(0, 0, 0, 0.5);
     width: 20vw;
     line-height: 5vh;
     text-align: center;
     font-size: 150%;
+    
 }
 
 .spacespace{
@@ -149,7 +150,7 @@
     background-color: rgb(233, 233, 233);
     height: 30vh;
     width: 20vw;
-    margin: 2% 5%;
+    margin: 2% 10%;
 }
 
 .space:hover{
@@ -163,6 +164,7 @@
     height: 80%;
     // background-color: aqua;
     font-size: 800%;
+    background-size: 100% 100%;
     text-align: center;
     display: flex;
     flex-direction: column;

@@ -28,6 +28,10 @@ import { BeachComponent } from './beach/beach.component';
 import { ForestComponent } from './forest/forest.component';
 import { MallComponent } from './mall/mall.component';
 import { ActivitiesComponent } from './activities/activities.component';
+import { ScoreboardComponent } from './scoreboard/scoreboard.component';
+import { FilldbComponent } from './filldb/filldb.component';
+import { ComicroomComponent } from './comicroom/comicroom.component';
+import { AddimagesfsComponent } from './addimagesfs/addimagesfs.component';
 
 @NgModule({
   declarations: [
@@ -43,10 +47,15 @@ import { ActivitiesComponent } from './activities/activities.component';
     ComicComponent,
     ForumComponent,
     CardsComponent,
+    ActivitiesComponent,
+    ScoreboardComponent,
+    ComicroomComponent,
     BeachComponent,
     ForestComponent,
     MallComponent,
-    ActivitiesComponent
+    ActivitiesComponent,
+    FilldbComponent,
+    AddimagesfsComponent
   ],
   imports: [
     BrowserModule,
