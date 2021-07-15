@@ -10,7 +10,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import {AngularFireAuthModule} from '@angular/fire/auth';
 import {AngularFirestoreModule} from '@angular/fire/firestore';
-// import { MatSelectModule } from '@angular/material';
+import { MatGridListModule } from '@angular/material/grid-list';
 import { MatSelectModule } from '@angular/material/select';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SigninComponent } from './signin/signin.component';
@@ -22,6 +22,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { Game2Component } from './game2/game2.component';
 import { Game2createroomComponent } from './game2createroom/game2createroom.component';
 import { ComicComponent } from './comic/comic.component';
+import { CardsComponent } from './cards/cards.component';
+import { AngularTiltModule } from 'angular-tilt';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,8 @@ import { ComicComponent } from './comic/comic.component';
     NavbarComponent,
     Game2Component,
     Game2createroomComponent,
-    ComicComponent
+    ComicComponent,
+    CardsComponent
   ],
   imports: [
     BrowserModule,
@@ -46,7 +49,9 @@ import { ComicComponent } from './comic/comic.component';
     AngularFireAuthModule,
     AngularFirestoreModule,
     MatSelectModule,
+    MatGridListModule,
     BrowserAnimationsModule,
+    AngularTiltModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
