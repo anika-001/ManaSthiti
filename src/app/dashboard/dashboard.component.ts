@@ -27,7 +27,8 @@ export class DashboardComponent implements OnInit {
   days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
   usermoods: any;
   temp = [];
-
+  stories: Array<any> = [];
+  stories2: any;
   storyform = new FormGroup({
     content: new FormControl(' ')
   })
@@ -36,6 +37,7 @@ export class DashboardComponent implements OnInit {
       if (!res) this.router.navigate(['/signin'])
       this.user = res;
       this.getMoods();
+      this.getstories();
     })
     
     for (let i = 0; i < 15; i++) this.daysofmonths.push(i);
@@ -62,14 +64,47 @@ export class DashboardComponent implements OnInit {
     });
   }
 
-  addstory() {
-    var date = new Date()
-    this.db.collection("Users").doc(this.user.uid).collection("Stories").doc(date.getFullYear().toString() + " " + date.getMonth().toString() + " " +  date.getDate().toString() + " " + date.getDay().toString()).collection("Story").add({ "story": "story", "Time": "Time" });
+  // addstory() {
+  //   var date = new Date()
+  //   this.db.collection("Users").doc(this.user.uid).collection("Stories").doc(date.getFullYear().toString() + " " + date.getMonth().toString() + " " +  date.getDate().toString() + " " + date.getDay().toString()).collection("Story").add({ "story": "story", "Time": "Time" });
+  // }
+
+  getstories(){
+    this.stories = []
+    this.db.collection("Users").doc(this.user.uid).collection("Stories").snapshotChanges().subscribe(res => {
+      var index = -1
+      console.log(res.length)
+      this.stories2 = res;
+      for(let i of res){
+        index += 1
+        var id = i.payload.doc.id
+        this.stories.push([]);
+        console.log(id)
+        this.db.collection("Users").doc(this.user.uid).collection("Stories").doc(id).collection("Story").snapshotChanges().subscribe(res => {
+          console.log(res.length)
+          for(let j of res){
+            var time = j.payload.doc.id.split(" ")
+            var timestr = time[0] + " Hours " + time[1] + " Minutes " + time[2] + " Seconds";
+            this.stories[index].push({"time": timestr, "story": j.payload.doc.data().story});
+            // console.log(this.stories);
+          }
+        })
+      }
+    })
   }
 
-  addtostory() {
+  getdate(obj){
+    var date = obj.payload.doc.id.split(" ");
+    return this.days[date[3]] + " " + date[2] + " " + this.months[date[1]] + " " + date[0];
+  }
+
+  addstory() {
     var date = new Date()
-    this.db.collection("Users").doc(this.user.uid).collection("Stories").doc(date.getFullYear().toString() + " " + date.getMonth().toString() + " " +  date.getDate().toString() + " " + date.getDay().toString()).collection("Story").add({ "story": "story", "Time": "Time" });
+    this.db.collection("Users").doc(this.user.uid).collection("Stories").doc(date.getFullYear().toString() + " " + date.getMonth().toString() + " " +  date.getDate().toString() + " " + date.getDay().toString()).set({"filler": "filler"}).then(res => {
+      this.db.collection("Users").doc(this.user.uid).collection("Stories").doc(date.getFullYear().toString() + " " + date.getMonth().toString() + " " +  date.getDate().toString() + " " + date.getDay().toString()).collection("Story").doc(date.getHours().toString() + " " +  date.getMinutes().toString() + " " +  date.getSeconds().toString()).set({ "story": this.storyform.get("content").value}).then(res => {
+        this.storyform.get("content").setValue("");
+      });
+    })
   }
 
   addmood(mood) {

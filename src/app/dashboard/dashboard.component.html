@@ -1,6 +1,6 @@
 <div class="main">
     <div class = "title">
-        Dashboard
+        Mood Tracker
     </div>
     <div class="moodboard">
         <div class = "moods">
@@ -15,18 +15,20 @@
                 }">
 
                 </div>
+                <div class = "moodbox md">{{getdate(x)}}</div>
             </div>
             <div class = "mood" *ngFor = "let x of temp">
                 <div class = "moodbox" *ngFor = "let x of moods; let i = index">
 
                 </div>
+                <div class = "moodbox md"></div>
             </div>
         </div>
     </div>
     <div class = "feeling">
         <div class = "feelingcont">
             <div class = "howfeeling">
-                How are you feeling today?
+                How are you feeling today? --> Pick one -->
             </div>
             <div class = "colorpanel">
                 <div class = "coll col{{i}}" *ngFor = "let i of [0, 1, 2, 3, 4, 5]" (click) = "addmood(i)"></div>
@@ -34,11 +36,21 @@
         </div>
     </div>
     <div class = "story">
-        <div class = "enterstory">
-
-        </div>
+        <form [formGroup]="storyform" class = "enterstory">
+            Today's Entry
+            <textarea placeholder="Type your entry" formControlName="content"
+            type="text" class="ip"></textarea>
+            <button class = "custbutton" style="font-size: 50%;" (click) = "addstory()">Write to diary</button>
+        </form>
         <div class = "stories">
-            
+            <button class = "custbutton" (click) = "getstories()">Get all entries</button>
+            <div class = "storyouter" *ngFor = "let x of stories.reverse(); let i = index">
+                <div class = "date">{{getdate(stories2[i])}}</div>
+                <div class = "storyinner" *ngFor = "let y of x">
+                    <div class = "storytime">{{y.time}}</div>
+                    <div class = "storystory">{{y.story}}</div>
+                </div>
+            </div>
         </div>
     </div>
     <div class = "stickypallete">

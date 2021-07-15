@@ -56,6 +56,12 @@ span.sr-only{
     font-family: country;
     src: url(assets/fonts/CountrysideTwo-r9WO.ttf) format("opentype");
   }
+
+  
+ @font-face {
+    font-family: handwriting;
+    src: url(assets/fonts/GrestalScriptDemoRegular-dBYX.ttf) format("opentype");
+  }
   *{
       font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   }
