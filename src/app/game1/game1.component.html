@@ -1,1 +1,24 @@
-<p>game1 works!</p>
+<div style="height: 100vh; width:100vw">
+    <div class="bt-container">
+        <div *ngIf="page1">
+            <div *ngFor="let i of locations1; let ind=index" >
+                <button class="btn" [style.margin-left.%]="i.x"
+                    [style.margin-top.%]="i.y" id="btn{{ind}}" (click)="click(ind)"></button>
+                <div class="rect-container" [style.margin-left.%]="i.x"
+                    [style.margin-top.%]="i.y" id="rect{{ind}}"></div>
+            </div>
+            <button *ngIf="showcont" (click)="toggle()">
+                Continue
+            </button>
+        </div>
+        <div *ngIf="!page1">
+            <div *ngFor="let i of locations2; let ind=index" >
+                <button class="btn" [style.margin-left.%]="i.x"
+                    [style.margin-top.%]="i.y" id="btn{{ind}}" (click)="click(ind)"></button>
+                <div class="rect-container" [style.margin-left.%]="i.x"
+                    [style.margin-top.%]="i.y" id="rect{{ind}}"></div>
+            </div>
+        </div>
+
+    </div>
+</div>
