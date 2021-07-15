@@ -1,22 +1,22 @@
 export let navbar = [
     {
         "role":"user",
-        "name":"Dashboard",
-        "link":"/home",
+        "name":"Mood Tracker",
+        "link":"/dashboard",
     },
     {
         "role":"user",
-        "name":"Games",
-        "link":"/home",
+        "name":"Activities",
+        "link":"/activities",
     },
     {
         "role":"user",
-        "name":"Home",
-        "link":"/home",
+        "name":"Safe Rooms",
+        "link":"/saferoom",
     },
     {
         "role":"user",
         "name":"Forum",
-        "link":"/home",
+        "link":"/forum",
     },
 ]
