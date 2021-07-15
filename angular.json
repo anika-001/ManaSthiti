@@ -28,8 +28,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss",
-              "../manasthiti/node_modules/aos/dist/aos.css"
+              "src/styles.scss"
             ],
             "scripts": []
           },
