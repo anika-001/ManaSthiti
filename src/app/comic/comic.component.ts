@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import * as AOS from 'aos';
+import firebase from 'firebase/app';
+import { AngularFirestore } from '@angular/fire/firestore';
 
 @Component({
   selector: 'app-comic',
@@ -6,10 +9,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./comic.component.scss']
 })
 export class ComicComponent implements OnInit {
-
-  constructor() { }
+Image:any;
+Message:any;
+constructor(private db: AngularFirestore) { }
 
   ngOnInit(): void {
+    AOS.init();
+    this.db.collection("Comicdata").doc().snapshotChanges().subscribe((res: any) => {
+      this.Image = res.payload.data().Image;
+      this.Message = res.payload.data().Message;
+      console.log(res);
+      console.log("hello")
+    })
   }
 
 }
