@@ -15,7 +15,7 @@ export class ForumComponent implements OnInit {
 
   thread: any = "";
   comments: any;
-  allthreads: any;
+  allthreads: any = [];
   user: any;
   ngOnInit(): void {
     this.getthreads();
@@ -38,6 +38,7 @@ export class ForumComponent implements OnInit {
   getthreads(){
     this.db.collection("Threads").snapshotChanges().subscribe(res => {
       this.allthreads = res;
+      console.log(this.allthreads[0].payload.doc.data())
     })
   }
 

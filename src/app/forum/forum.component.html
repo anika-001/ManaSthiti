@@ -23,7 +23,7 @@
                 {{x.payload.doc.data().topic}}
             </div>
         </div>
-        <div class = "thread">
+        <div class = "thread" *ngIf = "thread != ''">
             <div class = "threadtitle">
                 {{thread.payload.doc.data().topic}}
                 <div style = "font-family: country; font-size: 50%;">~By {{thread.payload.doc.data().madeby}}</div>
@@ -43,9 +43,6 @@
                     </div>
                 </div>
             </div>
-            <!-- <div class = "product" *ngFor = "let x of [1, 2, 3, 4, 5, 6]; let i = index">
-                <app-cards [type] = "1" [id] = "i"></app-cards>
-            </div> -->
         </div>
     </div>
 </div>
