@@ -15,6 +15,7 @@ import { ForumComponent } from './forum/forum.component';
 import { ActivitiesComponent } from './activities/activities.component';
 import { ComicroomComponent } from './comicroom/comicroom.component';
 import { AddimagesfsComponent } from './addimagesfs/addimagesfs.component';
+import { FilldbComponent } from './filldb/filldb.component';
 const routes: Routes = [
   {
     path: 'signin',
@@ -82,6 +83,10 @@ const routes: Routes = [
   {
     path: 'addimages',
     component: AddimagesfsComponent
+  },
+  {
+    path: 'try',
+    component: FilldbComponent
   }
 ];
 
