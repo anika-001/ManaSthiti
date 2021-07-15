@@ -60,7 +60,7 @@
             </div>
 
             <div class="spacespace">
-                <div class = "space" *ngFor = "let x of spaces; let i = index">
+                <div class = "space" *ngFor = "let x of spaces; let i = index" routerLink={{x.link}}>
                     <div class = "spaceimg"><img src = {{x.image}} style="height: 100%; width: 100%;"></div>
                     <div class = "namespace">{{x.name}}</div>
                 </div>
