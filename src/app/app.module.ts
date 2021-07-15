@@ -3,8 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { SaferoomComponent } from './saferoom/saferoom.component';
-import { Game1Component } from './game1/game1.component';
 
 import { AngularFireModule } from '@angular/fire';
 import { environment } from 'src/environments/environment';
@@ -18,6 +16,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SigninComponent } from './signin/signin.component';
 import { HomeComponent } from './home/home.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { SaferoomComponent } from './saferoom/saferoom.component';
+import { Game1Component } from './game1/game1.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     Game1Component,
     SigninComponent,
     HomeComponent,
-    DashboardComponent
+    DashboardComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
@@ -39,8 +41,6 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     AngularFirestoreModule,
     MatSelectModule,
     BrowserAnimationsModule,
-    SaferoomComponent,
-    Game1Component
   ],
   providers: [],
   bootstrap: [AppComponent]
