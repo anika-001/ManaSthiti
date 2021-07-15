@@ -4,7 +4,7 @@ import { HomeComponent } from './home/home.component';
 import { SigninComponent } from './signin/signin.component';
 import { SaferoomComponent } from './saferoom/saferoom.component';
 import { Game1Component } from './game1/game1.component';
-
+import { ComicComponent } from './comic/comic.component';
 const routes: Routes = [
   {
     path: 'signin',
@@ -28,7 +28,10 @@ const routes: Routes = [
   {
     path: 'game1',
     component: Game1Component
-  },
+  },{
+    path:'comic',
+    component:ComicComponent
+  }
 ];
 
 @NgModule({

@@ -18,6 +18,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SigninComponent } from './signin/signin.component';
 import { HomeComponent } from './home/home.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { ComicComponent } from './comic/comic.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     Game1Component,
     SigninComponent,
     HomeComponent,
-    DashboardComponent
+    DashboardComponent,
+    ComicComponent
   ],
   imports: [
     BrowserModule,
