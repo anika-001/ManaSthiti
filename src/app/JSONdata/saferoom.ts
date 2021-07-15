@@ -12,7 +12,7 @@ export let saferoom = [
         "audio":"./../../assets/Audios/saferoombg.mp3",
     },
     {
-        "name": "White noise",
+        "name": "Mall",
         // "image":
         "link":"/mall",
         "audio":"./../../assets/Audios/saferoombg.mp3",
