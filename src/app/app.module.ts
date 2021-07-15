@@ -27,6 +27,7 @@ import { CardsComponent } from './cards/cards.component';
 import { BeachComponent } from './beach/beach.component';
 import { ForestComponent } from './forest/forest.component';
 import { MallComponent } from './mall/mall.component';
+import { ActivitiesComponent } from './activities/activities.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { MallComponent } from './mall/mall.component';
     CardsComponent,
     BeachComponent,
     ForestComponent,
-    MallComponent
+    MallComponent,
+    ActivitiesComponent
   ],
   imports: [
     BrowserModule,

@@ -11,6 +11,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { BeachComponent } from './beach/beach.component';
 import { ForestComponent } from './forest/forest.component';
 import { MallComponent } from './mall/mall.component';
+import { ForumComponent } from './forum/forum.component';
+import { ActivitiesComponent } from './activities/activities.component';
 
 const routes: Routes = [
   {
@@ -63,6 +65,14 @@ const routes: Routes = [
   {
     path: 'mall',
     component: MallComponent
+  },
+  {
+    path: 'forum',
+    component: ForumComponent
+  },
+  {
+    path: 'activities',
+    component: ActivitiesComponent
   }
 ];
 
