@@ -18,6 +18,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SigninComponent } from './signin/signin.component';
 import { HomeComponent } from './home/home.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -37,7 +38,9 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     AngularFireAuthModule,
     AngularFirestoreModule,
     MatSelectModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    SaferoomComponent,
+    Game1Component
   ],
   providers: [],
   bootstrap: [AppComponent]
