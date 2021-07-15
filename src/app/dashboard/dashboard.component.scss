@@ -17,7 +17,7 @@
 .moodboard{
 
     background-color: bisque;
-    height: 20vh;
+    height: 42vh;
     width: 100%;
     display: flex;
 }
@@ -28,19 +28,19 @@
 }
 
 .moods{
-    width: 90vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
 }
 
 .mood{
-    height: 4vh;
+    height: 7vh;
     width: 100%;
     display: flex;
 }
 
 .moodbox{
-    width: 3vw;
+    width: 8vw;
     height: 100%;
     border: solid thin black;
 }
