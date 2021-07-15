@@ -54,6 +54,16 @@ export class ForumComponent implements OnInit {
       this.db.collection("Threads").add({"madeby": this.user.name, "uid": this.user.uid, "topic": this.threadform.get("newth").value});
     }
   }
+
+  addthreadAnon(){
+    if(this.user == null){
+      this.router.navigate(['/login']);
+    }
+    else{
+      this.db.collection("Threads").add({"madeby": "Anonymous", "uid": this.user.uid, "topic": this.threadform.get("newth").value});
+    }
+  }
+
   getthread(){
       this.db.collection("Threads").doc(this.thread.payload.doc.id).collection("comments").snapshotChanges().subscribe(res => {
         this.comments = res;
@@ -65,6 +75,15 @@ export class ForumComponent implements OnInit {
     }
     else{
       this.db.collection("Threads").doc(this.thread.payload.doc.id).collection("comments").add({"uid": this.user.uid, "comment": this.replyform.get("replyin").value, "name": this.user.name})
+    }
+  }
+
+  replyAnon(){
+    if(this.user == null){
+      this.router.navigate(['/login']);
+    }
+    else{
+      this.db.collection("Threads").doc(this.thread.payload.doc.id).collection("comments").add({"uid": this.user.uid, "comment": this.replyform.get("replyin").value, "name": "Anonymous"})
     }
   }
 
