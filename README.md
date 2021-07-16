@@ -108,4 +108,5 @@ Distributed under the MIT License. See `LICENSE` for more information.
 ## Credits
 Images:  Unsplash<br>
 Videos:  Pexels
-
+3D models: sketchfab
+Comic added: kill me,heal me
