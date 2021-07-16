@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import '@google/model-viewer';
+
 
 @Component({
   selector: 'app-plant',
