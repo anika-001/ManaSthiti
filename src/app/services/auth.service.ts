@@ -46,4 +46,8 @@ export class AuthService {
   getprofile(useruid) {
     return this.db.collection("Users").doc(useruid).snapshotChanges();
   }
+  
+  logout() {
+    return this.af.signOut();
+  }
 }

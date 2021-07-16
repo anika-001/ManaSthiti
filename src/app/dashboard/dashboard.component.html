@@ -44,7 +44,7 @@
         </form>
         <div class = "stories">
             <button class = "custbutton" (click) = "getstories()">Get all entries</button>
-            <div class = "storyouter" *ngFor = "let x of stories2; let i = index">
+            <div class = "storyouter" *ngFor = "let x of stories2.reverse(); let i = index">
                 <div class = "date">{{getdate(stories2[i].payload.doc.id)}}</div>
                 <div class = "storyinner" *ngFor = "let y of stories[x.payload.doc.id]">
                     <div class = "storytime">{{y.time}}</div>
@@ -54,6 +54,6 @@
         </div>
     </div>
     <div class = "stickypallete">
-        <div class = "rect rcol{{i}}" *ngFor = "let i of [0, 1, 2, 3, 4, 5]">{{moods[i]}}</div> 
+        <div class = "rect" *ngFor = "let i of [0, 1, 2, 3, 4, 5]">{{moods[i]}}</div> 
     </div>
 </div>

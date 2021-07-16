@@ -3,10 +3,17 @@
     width:100%;
     background-color: antiquewhite;
     display:flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-image: url("./../../assets/images/activities2.jpg");
+    background-size: 100% 100%;
     //height:10vh; width: 100%;
+}
+
+.title{
+    font-size: 200%;
+    font-family: country;
+    margin-bottom: 10px;
 }
 .header{
     height:15vh;
@@ -17,8 +24,8 @@
 
 .start{
     height:100vh;
-    width:100%;
-    background-image: url("./../../assets/images/activities2.jpg");
+    width: 50%;
+    
     display:flex;
     flex-direction: column;
     justify-content: center;

@@ -9,25 +9,29 @@ export class ActivitiesComponent implements OnInit {
 
   constructor() { }
 
-  activities:any;
+  games: any;
+  comics: any;
   ngOnInit(): void {
-    this.activities = [
+    this.games = [
       {
-          "name": "Anatomy of Panic Attack",
-          // "image":
-          "link":"/game1",
+        "name": "Anatomy of Panic Attack",
+        // "image":
+        "link": "/game1",
       },
       {
-          "name": "Jeopardy",
-          // "image":
-          "link":"/jeopardy",
+        "name": "Jeopardy",
+        // "image":
+        "link": "/jeopardy",
       },
+    ]
+
+    this.comics = [
       {
-          "name": "Comics",
-          // "image":
-          "link":"/comic",
+        "name": "Kill me Heal me",
+        // "image":
+        "link": "/comic",
       },
-  ]
+    ]
   }
 
 }
