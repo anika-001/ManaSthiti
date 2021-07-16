@@ -17,6 +17,10 @@ import { ComicroomComponent } from './comicroom/comicroom.component';
 import { AddimagesfsComponent } from './addimagesfs/addimagesfs.component';
 import { FilldbComponent } from './filldb/filldb.component';
 import { HouseComponent } from './house/house.component';
+import { BoardComponent } from './board/board.component';
+import { PuzzleComponent } from './puzzle/puzzle.component';
+import { PlantComponent } from './plant/plant.component';
+import { TorchComponent } from './torch/torch.component';
 const routes: Routes = [
   {
     path: 'signin',
@@ -60,6 +64,22 @@ const routes: Routes = [
   {
     path: 'beach',
     component: BeachComponent
+  },
+  {
+    path: 'board',
+    component: BoardComponent
+  },
+  {
+    path: 'plant',
+    component: PlantComponent
+  },
+  {
+    path: 'torch',
+    component: TorchComponent
+  },
+  {
+    path: 'puzzle',
+    component: PuzzleComponent
   },
   {
     path: 'forest',

@@ -38,6 +38,10 @@ import { MiddleComponent } from './middle/middle.component';
 import { EscaperoomComponent } from './escaperoom/escaperoom.component';
 import { TictactoeComponent } from './tictactoe/tictactoe.component';
 import { ToysComponent } from './toys/toys.component';
+import { BoardComponent } from './board/board.component';
+import { PuzzleComponent } from './puzzle/puzzle.component';
+import { PlantComponent } from './plant/plant.component';
+import { TorchComponent } from './torch/torch.component';
 
 @NgModule({
   declarations: [
@@ -67,7 +71,11 @@ import { ToysComponent } from './toys/toys.component';
     MiddleComponent,
     EscaperoomComponent,
     TictactoeComponent,
-    ToysComponent
+    ToysComponent,
+    BoardComponent,
+    PuzzleComponent,
+    PlantComponent,
+    TorchComponent
   ],
   imports: [
     BrowserModule,
