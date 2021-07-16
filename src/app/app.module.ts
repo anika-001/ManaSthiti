@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -33,6 +33,15 @@ import { FilldbComponent } from './filldb/filldb.component';
 import { ComicroomComponent } from './comicroom/comicroom.component';
 import { AddimagesfsComponent } from './addimagesfs/addimagesfs.component';
 import { HouseComponent } from './house/house.component';
+import { RoomComponent } from './room/room.component';
+import { MiddleComponent } from './middle/middle.component';
+import { EscaperoomComponent } from './escaperoom/escaperoom.component';
+import { TictactoeComponent } from './tictactoe/tictactoe.component';
+import { ToysComponent } from './toys/toys.component';
+import { BoardComponent } from './board/board.component';
+import { PuzzleComponent } from './puzzle/puzzle.component';
+import { PlantComponent } from './plant/plant.component';
+import { TorchComponent } from './torch/torch.component';
 
 @NgModule({
   declarations: [
@@ -57,7 +66,16 @@ import { HouseComponent } from './house/house.component';
     ActivitiesComponent,
     FilldbComponent,
     AddimagesfsComponent,
-    HouseComponent
+    HouseComponent,
+    RoomComponent,
+    MiddleComponent,
+    EscaperoomComponent,
+    TictactoeComponent,
+    ToysComponent,
+    BoardComponent,
+    PuzzleComponent,
+    PlantComponent,
+    TorchComponent
   ],
   imports: [
     BrowserModule,
@@ -73,6 +91,7 @@ import { HouseComponent } from './house/house.component';
     BrowserAnimationsModule,
   
   ],
+  schemas:[CUSTOM_ELEMENTS_SCHEMA],
   providers: [],
   bootstrap: [AppComponent]
 })
