@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { AngularFireModule } from '@angular/fire';
 import { environment } from 'src/environments/environment';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { DragDropModule} from '@angular/cdk/drag-drop';
 
 import {AngularFireAuthModule} from '@angular/fire/auth';
 import {AngularFirestoreModule} from '@angular/fire/firestore';
@@ -42,6 +43,7 @@ import { BoardComponent } from './board/board.component';
 import { PuzzleComponent } from './puzzle/puzzle.component';
 import { PlantComponent } from './plant/plant.component';
 import { TorchComponent } from './torch/torch.component';
+import { ReachedComponent } from './reached/reached.component';
 
 @NgModule({
   declarations: [
@@ -75,7 +77,8 @@ import { TorchComponent } from './torch/torch.component';
     BoardComponent,
     PuzzleComponent,
     PlantComponent,
-    TorchComponent
+    TorchComponent,
+    ReachedComponent
   ],
   imports: [
     BrowserModule,
@@ -89,6 +92,7 @@ import { TorchComponent } from './torch/torch.component';
     MatSelectModule,
     MatGridListModule,
     BrowserAnimationsModule,
+    DragDropModule
   
   ],
   schemas:[CUSTOM_ELEMENTS_SCHEMA],

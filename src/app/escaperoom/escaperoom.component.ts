@@ -1,4 +1,4 @@
-  
+
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
@@ -28,13 +28,13 @@ export class EscaperoomComponent implements OnInit {
   }
 
   formanswer = new FormGroup({
-    puzzle1: new FormControl('', [Validators.required, Validators.pattern('623890')]),
+    puzzle1: new FormControl('', [Validators.required, Validators.pattern('Anxiety')]),
     puzzle2: new FormControl('', [Validators.required, Validators.pattern('5340')]),
-    puzzle3: new FormControl('', [Validators.required, Validators.pattern('C')]),
+    puzzle3: new FormControl('', [Validators.required, Validators.pattern('OCD')]),
     puzzle4: new FormControl('', [Validators.required, Validators.pattern('green')]),
-    puzzle5: new FormControl('', [Validators.required, Validators.pattern('hFdtRqq12')]),
-    puzzle6: new FormControl('', [Validators.required, Validators.pattern('VAJ')]),
-    puzzle7: new FormControl('', [Validators.required, Validators.pattern('5614251')]),
+    puzzle5: new FormControl('', [Validators.required, Validators.pattern('Depression')]),
+    puzzle6: new FormControl('', [Validators.required, Validators.pattern('Bipolar Disorder')]),
+    puzzle7: new FormControl('', [Validators.required, Validators.pattern('PTSD')]),
   })
 
   returnformname(i) {
@@ -88,7 +88,7 @@ export class EscaperoomComponent implements OnInit {
     this.chosen = o;
     if (o == 0) {
       this.conversation = [];
-      this.conversation = ["...", "Through the door", "There is one code i can give you; the sixth one.", "I am the sixth code."]
+      this.conversation = ["...", "Through the door", "There is one code i can give you; the sixth one.", "The code is Bipolar Disorder. Bipolar disorder causes dramatic shifts in a person's mood, energy and ability to think clearly. Individuals with this disorder experience extreme high and low moods, known as mania and depression. Some people can be symptom-free for many years between episodes.."]
       this.conversationyou = ["how do i get out of here?", "but i do not know the code.", "Oh what is it?", "End"]
 
     }
@@ -100,8 +100,8 @@ export class EscaperoomComponent implements OnInit {
 
   }
 
-  submit(){
-    if(this.formanswer.invalid) return;
+  submit() {
+    if (this.formanswer.invalid) return;
     this.router.navigate(['/reachedhome'])
   }
 

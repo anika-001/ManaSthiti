@@ -23,6 +23,12 @@ export class ActivitiesComponent implements OnInit {
         // "image":
         "link": "/jeopardy",
       },
+
+      {
+        "name": "Escape Room",
+        // "image":
+        "link": "/room",
+      },
     ]
 
     this.comics = [

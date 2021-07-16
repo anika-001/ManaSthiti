@@ -71,6 +71,7 @@ getstories(){
     var index = -1
     console.log(res)
     this.stories2 = res;
+    this.stories2.reverse();
     for (let i of res) {
       this.stories = [];
       index += 1

@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { SigninComponent } from './signin/signin.component';
@@ -21,6 +21,11 @@ import { BoardComponent } from './board/board.component';
 import { PuzzleComponent } from './puzzle/puzzle.component';
 import { PlantComponent } from './plant/plant.component';
 import { TorchComponent } from './torch/torch.component';
+import { EscaperoomComponent } from './escaperoom/escaperoom.component';
+import { ToysComponent } from './toys/toys.component';
+import { RoomComponent } from './room/room.component';
+import { MiddleComponent } from './middle/middle.component';
+import { ReachedComponent } from './reached/reached.component';
 const routes: Routes = [
   {
     path: 'signin',
@@ -112,6 +117,27 @@ const routes: Routes = [
   {
     path: 'try',
     component: FilldbComponent
+  },
+  {
+    path: 'escaperoom',
+    component: EscaperoomComponent
+  },
+  {
+    path: 'toys',
+    component: ToysComponent
+  },
+  {
+    path: 'room',
+    component: RoomComponent
+  },
+  {
+    path: 'middle',
+    component: MiddleComponent
+  },
+  {
+    path: 'reachedhome',
+    component: ReachedComponent
+    
   }
 ];
 
