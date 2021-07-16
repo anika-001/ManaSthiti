@@ -34,6 +34,9 @@ import { ComicroomComponent } from './comicroom/comicroom.component';
 import { AddimagesfsComponent } from './addimagesfs/addimagesfs.component';
 import { HouseComponent } from './house/house.component';
 import { BoardComponent } from './board/board.component';
+import { PuzzleComponent } from './puzzle/puzzle.component';
+import { PlantComponent } from './plant/plant.component';
+import { TorchComponent } from './torch/torch.component';
 
 @NgModule({
   declarations: [
@@ -59,7 +62,10 @@ import { BoardComponent } from './board/board.component';
     FilldbComponent,
     AddimagesfsComponent,
     HouseComponent,
-    BoardComponent
+    BoardComponent,
+    PuzzleComponent,
+    PlantComponent,
+    TorchComponent
   ],
   imports: [
     BrowserModule,
