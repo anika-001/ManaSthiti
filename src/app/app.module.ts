@@ -33,6 +33,7 @@ import { FilldbComponent } from './filldb/filldb.component';
 import { ComicroomComponent } from './comicroom/comicroom.component';
 import { AddimagesfsComponent } from './addimagesfs/addimagesfs.component';
 import { HouseComponent } from './house/house.component';
+import { BoardComponent } from './board/board.component';
 
 @NgModule({
   declarations: [
@@ -57,7 +58,8 @@ import { HouseComponent } from './house/house.component';
     ActivitiesComponent,
     FilldbComponent,
     AddimagesfsComponent,
-    HouseComponent
+    HouseComponent,
+    BoardComponent
   ],
   imports: [
     BrowserModule,
