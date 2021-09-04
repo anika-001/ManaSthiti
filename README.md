@@ -2,10 +2,9 @@
 
 # ManaSthiti
 
-![GitHub Repo stars](https://img.shields.io/github/stars/Vaishnavi06Desai/ManaSthiti?style=for-the-badge)
-![GitHub](https://img.shields.io/github/license/Vaishnavi06Desai/ManaSthiti?color=%23ffff00&style=for-the-badge)
-![GitHub contributors](https://img.shields.io/github/contributors/Vaishnavi06Desai/OvaryAct?color=%00b3b3&style=for-the-badge)
-![GitHub forks](https://img.shields.io/github/forks/Vaishnavi06Desai/ManaSthiti?color=%23ff69b4&style=for-the-badge)
+![GitHub Repo stars](https://img.shields.io/github/stars/anika-001/ManaSthiti?style=for-the-badge)
+![GitHub](https://img.shields.io/github/license/anika-001/ManaSthiti?color=%23ffff00&style=for-the-badge)
+![GitHub forks](https://img.shields.io/github/forks/anika-001/ManaSthiti?color=%23ff69b4&style=for-the-badge)
 
 
 ## Video
@@ -78,7 +77,7 @@ Implementing all the features in the given time constraint was one of the major 
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/Vaishnavi06Desai/ManaSthiti.git
+   git clone https://github.com/anika-001/ManaSthiti.git
    ```
 2. Install NPM packages
    ```sh
@@ -94,7 +93,7 @@ Implementing all the features in the given time constraint was one of the major 
 ## Contributing
 
 1. Fork the Project
-2. Clone the repository (`git clone https://github.com/Vaishnavi06Desai/ManaSthiti.git`)
+2. Clone the repository (`git clone https://github.com/anika-001/ManaSthiti.git`)
 3. Create a Branch (`git checkout -b new-branch-name`)
 4. Commit your Changes (`git commit -m 'Added some Amazing Features'`)
 5. Push to the Branch (`git push origin your-branch-name`)
