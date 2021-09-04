@@ -64,10 +64,9 @@ Implementing all the features in the given time constraint was one of the major 
 
 ### Built With
 
-* [MongoDB](https://www.mongodb.com/cloud/atlas/lp/try2-in?utm_source=google&utm_campaign=gs_apac_india_search_core_brand_atlas_desktop&utm_term=mongodb&utm_medium=cpc_paid_search&utm_ad=e&utm_ad_campaign_id=12212624347&gclid=Cj0KCQjwse-DBhC7ARIsAI8YcWJdrpDGwUuJfqeQfiaMAsLLV8SbNuTAjjZSK61kcUZpO8DT9yjoEeYaAqS4EALw_wcB)
-* [Express.js](https://expressjs.com/)
+* [Firebase](https://firebase.google.com/)
 * [Angular](https://angular.io/)
-* [Node.js](https://nodejs.org/en/)
+
 
 
 <!-- GETTING STARTED -->
